@@ -14,15 +14,15 @@ font:
 
   normal:
     family: "JetBrains Mono"
-    style: Light
+    style: Medium
 
   bold:
     family: "JetBrains Mono"
-    style: Medium
+    style: Bold
 
   italic:
     family: "JetBrains Mono"
-    style: "Light Italic"
+    style: "Medium Italic"
 
   offset:
     x: 0
@@ -34,6 +34,35 @@ font:
 
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: false
+
+colors:
+  # Default colors
+  primary:
+    background: '#1f2430'
+    foreground: '#cbccc6'
+    bright_foreground: '#f28779'
+
+  # Normal colors
+  normal:
+    black:   '#212733' #
+    red:     '#f08778' #
+    green:   '#53bf97' #
+    yellow:  '#fdcc60' #
+    blue:    '#60b8d6' # 
+    magenta: '#ec7171' #
+    cyan:    '#98e6ca' #
+    white:   '#fafafa' #
+
+  # Brightened
+  bright:
+    black: '#686868'
+    red: '#f58c7d'
+    green: '#58c49c'
+    yellow: '#ffd165'
+    blue: '#65bddb'
+    magenta: '#f17676'
+    cyan: '#9debcf'
+    white: '#ffffff'
 
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
