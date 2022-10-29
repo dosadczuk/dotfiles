@@ -8,20 +8,24 @@ window:
 
   startup_mode: Windowed
 
+# Scroll configuration
+scrolling:
+  history: 0
+
 # Font configuration
 font:
   size: 12.0
 
   normal:
-    family: "JetBrains Mono"
+    family: "JetBrainsMono Nerd Font"
     style: Medium
 
   bold:
-    family: "JetBrains Mono"
+    family: "JetBrainsMono Nerd Font"
     style: Bold
 
   italic:
-    family: "JetBrains Mono"
+    family: "JetBrainsMono Nerd Font"
     style: "Medium Italic"
 
   offset:
@@ -81,8 +85,6 @@ cursor:
 dynamic_title: false
 
 shell:
- program: "C:\\Windows\\System32\\wsl.exe"
+ program: "C:\\Windows\\System32\\wsl.exe ~"
  args:
   - -d Debian
-
-working_directory: \\wsl$\Debian\
