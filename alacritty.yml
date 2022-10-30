@@ -1,5 +1,7 @@
 # Window configuration
 window:
+  title: "WSL"
+
   opacity: 1.0
 
   dimensions:
@@ -7,6 +9,8 @@ window:
     lines: 40
 
   startup_mode: Windowed
+
+dynamic_title: false
 
 # Scroll configuration
 scrolling:
@@ -40,33 +44,84 @@ font:
 draw_bold_text_with_bright_colors: false
 
 colors:
-  # Default colors
-  primary:
-    background: '#1f2430'
-    foreground: '#cbccc6'
-    bright_foreground: '#f28779'
+    # Default colors
+    primary:
+        background: "#24273A" # base
+        foreground: "#CAD3F5" # text
+        # Bright and dim foreground colors
+        dim_foreground: "#CAD3F5" # text
+        bright_foreground: "#CAD3F5" # text
 
-  # Normal colors
-  normal:
-    black:   '#212733' #
-    red:     '#f08778' #
-    green:   '#53bf97' #
-    yellow:  '#fdcc60' #
-    blue:    '#60b8d6' # 
-    magenta: '#ec7171' #
-    cyan:    '#98e6ca' #
-    white:   '#fafafa' #
+    # Cursor colors
+    cursor:
+        text: "#24273A" # base
+        cursor: "#F4DBD6" # rosewater
+    vi_mode_cursor:
+        text: "#24273A" # base
+        cursor: "#B7BDF8" # lavender
 
-  # Brightened
-  bright:
-    black: '#686868'
-    red: '#f58c7d'
-    green: '#58c49c'
-    yellow: '#ffd165'
-    blue: '#65bddb'
-    magenta: '#f17676'
-    cyan: '#9debcf'
-    white: '#ffffff'
+    # Search colors
+    search:
+        matches:
+            foreground: "#24273A" # base
+            background: "#A5ADCB" # subtext0
+        focused_match:
+            foreground: "#24273A" # base
+            background: "#A6DA95" # green
+        footer_bar:
+            foreground: "#24273A" # base
+            background: "#A5ADCB" # subtext0
+
+    # Keyboard regex hints
+    hints:
+        start:
+            foreground: "#24273A" # base
+            background: "#EED49F" # yellow
+        end:
+            foreground: "#24273A" # base
+            background: "#A5ADCB" # subtext0
+
+    # Selection colors
+    selection:
+        text: "#24273A" # base
+        background: "#F4DBD6" # rosewater
+
+    # Normal colors
+    normal:
+        black: "#494D64" # surface1
+        red: "#ED8796" # red
+        green: "#A6DA95" # green
+        yellow: "#EED49F" # yellow
+        blue: "#8AADF4" # blue
+        magenta: "#F5BDE6" # pink
+        cyan: "#8BD5CA" # teal
+        white: "#B8C0E0" # subtext1
+
+    # Bright colors
+    bright:
+        black: "#5B6078" # surface2
+        red: "#ED8796" # red
+        green: "#A6DA95" # green
+        yellow: "#EED49F" # yellow
+        blue: "#8AADF4" # blue
+        magenta: "#F5BDE6" # pink
+        cyan: "#8BD5CA" # teal
+        white: "#A5ADCB" # subtext0
+
+    # Dim colors
+    dim:
+        black: "#494D64" # surface1
+        red: "#ED8796" # red
+        green: "#A6DA95" # green
+        yellow: "#EED49F" # yellow
+        blue: "#8AADF4" # blue
+        magenta: "#F5BDE6" # pink
+        cyan: "#8BD5CA" # teal
+        white: "#B8C0E0" # subtext1
+
+    indexed_colors:
+        - { index: 16, color: "#F5A97F" }
+        - { index: 17, color: "#F4DBD6" }
 
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
@@ -81,8 +136,6 @@ selection:
 cursor:
   style: Block
   unfocused_hollow: true
-
-dynamic_title: false
 
 shell:
  program: "C:\\Windows\\System32\\wsl.exe ~"
