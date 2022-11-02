@@ -2,7 +2,7 @@
 window:
   title: "WSL"
 
-  opacity: 0.99
+  opacity: 1.00
 
   dimensions:
     columns: 150
